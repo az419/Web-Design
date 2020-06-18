@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1" />
+    <title>Module 2 Assignment</title>
+    <style>
+    
+    * {
+        box-sizing: border-box;
+    }
+    p {
+        background-color:gray;
+        font-family: Helvetica;
+        color:black;
+    }
+
+    
+    .row {
+        width: 100%;
+    }
+
+      /*small device*/
+      @media (max-width: 767px) {
+        .col-sm-1,
+        .col-sm-2,
+        .col-sm-3,
+        .col-sm-4,
+        .col-sm-5,
+        .col-sm-6,
+        .col-sm-7,
+        .col-sm-8,
+        .col-sm-9,
+        .col-sm-10,
+        .col-sm-11,
+        .col-sm-12 {
+          float: left;
+          width: 150px;
+          
+          border: 1px solid black;
+        }
+        .col-sm-12 {
+          width: 100%;
+        }
+      }
+
+      /*medium device*/
+      @media (min-width: 768px) and (max-width: 991px) {
+        .col-md-1,
+        .col-md-2,
+        .col-md-3,
+        .col-md-4,
+        .col-md-5,
+        .col-md-6,
+        .col-md-7,
+        .col-md-8,
+        .col-md-9,
+        .col-md-10,
+        .col-md-11,
+        .col-md-12 {
+          float: left;
+          width: 150px;
+          
+          border: 1px solid black;
+        }
+        .col-md-6 {
+          width: 50%;
+        }
+      }
+
+      /*large device*/
+      @media (min-width: 992px) {
+        .col-lg-1,
+        .col-lg-2,
+        .col-lg-3,
+        .col-lg-4,
+        .col-lg-5,
+        .col-lg-6,
+        .col-lg-7,
+        .col-lg-8,
+        .col-lg-9,
+        .col-lg-10,
+        .col-lg-11,
+        .col-lg-12 {
+          float: left;
+          width: 150px;
+          
+          border: 1px solid black;
+        }
+        .col-lg-4 {
+          width: 33.33%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is the menu:)</h1>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <!--<div class="menu-item">-->
+          <h2 class="menu-item-title chicken">Chicken</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <!--<div class="menu-item">-->
+          <h2 class="menu-item-title beef">Beef</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <!--<div class="menu-item">-->
+          <h2 class="menu-item-title sushi">Sushi</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
