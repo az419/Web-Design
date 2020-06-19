@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+p {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: black;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  position: relative;
+  text-align: center;
+}
+
+#container1 {
+  background-color: gray;
+  border: 1px solid black;
+  position: relative;
+  /*margin-top: 20px;*/
+  overflow: auto;
+  margin: 10px;
+}
+
+#container2 {
+  background-color: gray;
+  border: 1px solid black;
+  position: relative;
+  /*margin-top: 20px;*/
+  overflow: auto;
+  margin: 10px;
+}
+
+#container3 {
+  background-color: gray;
+  border: 1px solid black;
+  position: relative;
+  /*margin-top: 20px;*/
+  overflow: auto;
+  margin: 10px;
+}
+
+#Chicken {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: rgb(191, 115, 142);
+  color: black;
+  position: absolute;
+  border: 1px solid black;
+  width: 250px;
+  height: 40px;
+  top: -20px;
+  right: 0px;
+  text-align: center;
+}
+
+#Beef {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: maroon;
+  color: white;
+  position: absolute;
+  border: 1px solid black;
+  width: 250px;
+  height: 40px;
+  top: -20px;
+  right: 0px;
+  overflow: auto;
+  text-align: center;
+}
+
+#Sushi {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: rgb(187, 138, 88);
+  color: black;
+  position: absolute;
+  border: 1px solid black;
+  width: 250px;
+  height: 40px;
+  top: -20px;
+  right: 0px;
+  overflow: auto;
+  text-align: center;
+}
+
+.row {
+  width: 100%;
+}
+
+/*small device*/
+@media (max-width: 767px) {
+  .col-sm-12 {
+    float: left;
+    width: 150px;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+
+/*medium device*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    float: left;
+    width: 150px;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+}
+
+/*large device*/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    width: 150px;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+}
