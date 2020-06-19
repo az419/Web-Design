@@ -5,39 +5,97 @@
     <meta name="viewpoint" content="width=device-width, initial-scale=1" />
     <title>Module 2 Assignment</title>
     <style>
-    
-    * {
+      * {
         box-sizing: border-box;
-    }
-    p {
-        background-color:gray;
-        font-family: Helvetica;
-        color:black;
-    }
+      }
+      p {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        color: black;
+        margin-top: -30px;
+      }
 
-    
-    .row {
+      h1 {
+        font-size: 30px;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        position: relative;
+        text-align: center;
+      }
+
+      #container1 {
+        background-color: gray;
+        border: 1px solid black;
+        position: relative;
+        /*margin-top: 20px;*/
+        overflow: auto;
+        margin: 10px;
+      }
+
+      #container2 {
+        background-color: gray;
+        border: 1px solid black;
+        position: relative;
+        /*margin-top: 20px;*/
+        overflow: auto;
+        margin: 10px;
+      }
+
+      #container3 {
+        background-color: gray;
+        border: 1px solid black;
+        position: relative;
+        /*margin-top: 20px;*/
+        overflow: auto;
+        margin: 10px;
+      }
+
+      #Chicken {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        background-color: rgb(191, 115, 142);
+        color: black;
+        position: relative;
+        border: 1px solid black;
+        width: 250px;
+        height: 40px;
+        top: -20px;
+        right: 0px;
+        text-align: center;
+      }
+
+      #Beef {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        background-color: maroon;
+        color: white;
+        position: relative;
+        border: 1px solid black;
+        width: 250px;
+        height: 40px;
+        top: -20px;
+        overflow: auto;
+        text-align: center;
+      }
+
+      #Sushi {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        background-color: rgb(187, 138, 88);
+        color: black;
+        position: relative;
+        border: 1px solid black;
+        width: 250px;
+        height: 40px;
+        top: -20px;
+        overflow: auto;
+        text-align: center;
+      }
+
+      .row {
         width: 100%;
-    }
+      }
 
       /*small device*/
       @media (max-width: 767px) {
-        .col-sm-1,
-        .col-sm-2,
-        .col-sm-3,
-        .col-sm-4,
-        .col-sm-5,
-        .col-sm-6,
-        .col-sm-7,
-        .col-sm-8,
-        .col-sm-9,
-        .col-sm-10,
-        .col-sm-11,
         .col-sm-12 {
           float: left;
           width: 150px;
-          
-          border: 1px solid black;
         }
         .col-sm-12 {
           width: 100%;
@@ -46,22 +104,9 @@
 
       /*medium device*/
       @media (min-width: 768px) and (max-width: 991px) {
-        .col-md-1,
-        .col-md-2,
-        .col-md-3,
-        .col-md-4,
-        .col-md-5,
-        .col-md-6,
-        .col-md-7,
-        .col-md-8,
-        .col-md-9,
-        .col-md-10,
-        .col-md-11,
-        .col-md-12 {
+        .col-md-6 {
           float: left;
           width: 150px;
-          
-          border: 1px solid black;
         }
         .col-md-6 {
           width: 50%;
@@ -70,22 +115,9 @@
 
       /*large device*/
       @media (min-width: 992px) {
-        .col-lg-1,
-        .col-lg-2,
-        .col-lg-3,
-        .col-lg-4,
-        .col-lg-5,
-        .col-lg-6,
-        .col-lg-7,
-        .col-lg-8,
-        .col-lg-9,
-        .col-lg-10,
-        .col-lg-11,
-        .col-lg-12 {
+        .col-lg-4 {
           float: left;
           width: 150px;
-          
-          border: 1px solid black;
         }
         .col-lg-4 {
           width: 33.33%;
@@ -94,12 +126,12 @@
     </style>
   </head>
   <body>
-    <h1>This is the menu:)</h1>
+    <h1>Our Menu:)</h1>
 
     <div class="row">
       <div class="col-lg-4 col-md-6 col-sm-12">
-        <!--<div class="menu-item">-->
-          <h2 class="menu-item-title chicken">Chicken</h2>
+        <div id="container1">
+          <h2 id="Chicken">Chicken</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -115,8 +147,8 @@
 
     <div class="row">
       <div class="col-lg-4 col-md-6 col-sm-12">
-        <!--<div class="menu-item">-->
-          <h2 class="menu-item-title beef">Beef</h2>
+        <div id="container2">
+          <h2 id="Beef">Beef</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -131,9 +163,9 @@
     </div>
 
     <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <!--<div class="menu-item">-->
-          <h2 class="menu-item-title sushi">Sushi</h2>
+      <div class="col-lg-4 col-sm-12 col-sm-12">
+        <div id="container3">
+          <h2 id="Sushi">Sushi</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
