@@ -1,0 +1,126 @@
+body {
+  background-color: white;
+  font-family: "Balsamiq Sans", cursive;
+  color: black;
+}
+
+/*HEADER*/
+#navbar-header {
+  background-color: rgb(150, 150, 150);
+  border: 2px solid black;
+  height: 90px;
+}
+
+.navbar-brand {
+  padding-top: 5px;
+}
+
+.navbar-brand a {
+  color: black;
+}
+
+.navbar-brand a:hover,
+.navbar-brand a:focus {
+  text-decoration: none;
+}
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 40px;
+  height: 10px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: black;
+}
+
+.navbar-header button.navbar-toggle,
+.navbar-header .icon-bar {
+  border: 2px solid black;
+}
+
+.navbar-header button.navbar-toggle {
+  margin-top: -35px;
+  clear: both;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+
+hr {
+  height: 0.5px;
+  background-color: black;
+  border: 0.5px solid black;
+}
+
+#nav-list a {
+  font-size: 2em;
+  text-align: center;
+  color: black;
+}
+
+#nav-list a:hover {
+  background: #e7e7e7;
+}
+
+/*END OF HEADER*/
+
+/*MAIN CONTENT*/
+#Main-heading {
+  font-size: 3em;
+  text-align: center;
+  padding: 1px;
+}
+
+#Chicken-tile,
+#Beef-tile,
+#Sushi-tile {
+  background-color: rgb(150, 150, 150);
+  padding: 0px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#Chicken-tile h1,
+#Beef-tile h1,
+#Sushi-tile h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+#Chicken-tile p,
+#Beef-tile p,
+#Sushi-tile p {
+  font-size: 1.5em;
+  padding: 15px;
+}
+/*END OF MAIN CONTENT*/
+
+/***********Small Device Only***********/
+@media (min-width: 768px) and (max-width: 991px) {
+  #Chicken-tile,
+  #Beef-tile,
+  #Sushi-tile {
+    text-align: center;
+  }
+}
+
+/***********Extra Small Device Only***********/
+@media (max-width: 767px) {
+  #Chicken-tile,
+  #Beef-tile,
+  #Sushi-tile {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .container #Main-Content {
+    position: relative;
+  }
+
+  ul {
+    opacity: 0.8;
+  }
+}
